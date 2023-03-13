@@ -1,0 +1,78 @@
+.lightbulb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .lightbulb-container.light {
+    background: #f2f2f2;
+  }
+  
+  .lightbulb-container.dark {
+    background: rgb(100, 102, 102);
+  }
+  
+  .lightbulb {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .bulb {
+    background-color: #fff;
+    z-index: 99999;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+      inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .light-text {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+  }
+
+  .history-list {
+    border: solid black 0.3rem;
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  .history-list ul{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .history-list ul li{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+  }
+  
+  .lightbulb.on {
+    background-color: #ffd700;
+  }
+  
+  .lightbulb.on .bulb {
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .lightbulb.off {
+    filter: brightness(50%);
+  }
+  
+  .lightbulb.off .bulb {
+    box-shadow: none;
+  }
+  
